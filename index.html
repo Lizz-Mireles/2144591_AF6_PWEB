@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresas para mis prácticas profesionales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Iconos -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M6 21V12"/><path d="M11 21V5"/><path d="M16 21v-7"/><path d="M21 21V9"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></symbol>
+      <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16l1.6-5a2 2 0 0 1 1.9-1.4h7a2 2 0 0 1 1.9 1.4L19 16"/><path d="M3 16h18v3H3z"/><path d="M7 19v1.5"/><path d="M17 19v1.5"/></symbol>
+      <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5" stroke-dasharray="2.4 2.4" stroke-width="3"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="2"/></symbol>
+      <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6z"/><path d="M5 10v8"/><path d="M9.7 10v8"/><path d="M14.3 10v8"/><path d="M19 10v8"/><path d="M3 21h18"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16"/><path d="M15 9h4a1 1 0 0 1 1 1v11"/><path d="M3 21h18"/><path d="M8 8h3"/><path d="M8 12h3"/><path d="M8 16h3"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M3.5 6l1.5 1.5L7.5 5"/><path d="M3.5 12l1.5 1.5L7.5 11"/><path d="M3.5 18l1.5 1.5L7.5 17"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></symbol>
+    </defs>
+  </svg>
+
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo"><svg class="ico logo-ico" aria-hidden="true" focusable="false"><use href="#i-cap"/></svg>Mis <span>Prácticas</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+      <nav id="mainNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#empresas">Empresas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Empresas donde me gustaría <em>hacer mis prácticas</em></h1>
+          <p class="hero-text">
+            Esta página reúne a <strong>KIA</strong>, <strong>ZF</strong> y <strong>Banorte</strong>:
+            qué hace cada una y qué oportunidades tienen para un practicante de mi carrera.
+          </p>
+          <a href="#empresas" class="btn">Conocer las empresas <svg class="ico btn-ico down" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></a>
+        </div>
+        <img class="hero-img" src="img/hero.svg" width="560" height="380"
+             alt="Ilustración de una computadora con código conectada a un auto, un engrane y un banco">
+      </div>
+    </section>
+
+    <!-- EMPRESAS -->
+    <section id="empresas" class="section">
+      <div class="container">
+        <h2 class="section-title">Las empresas</h2>
+        <p class="section-sub">Selecciona una empresa para ver su información.</p>
+
+        <div class="tabs" role="tablist">
+          <button class="tab active" data-target="kia" role="tab"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-car"/></svg>KIA</button>
+          <button class="tab" data-target="zf" role="tab"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-gear"/></svg>ZF</button>
+          <button class="tab" data-target="banorte" role="tab"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-bank"/></svg>Banorte</button>
+        </div>
+
+        <!-- KIA -->
+        <article class="company active" id="kia">
+          <div class="company-head">
+            <span class="badge">Automotriz</span>
+            <h3>KIA</h3>
+          </div>
+          <div class="company-intro">
+            <div class="intro-text">
+            <p>
+              Kia es una de las marcas automotrices más importantes del mundo, de origen surcoreano.
+              Diseña, fabrica y vende automóviles, SUVs y vehículos eléctricos. En México cuenta con una
+              planta de manufactura en Pesquería, Nuevo León, desde donde produce vehículos para el
+              mercado nacional y para exportación. Hoy la marca se está transformando hacia la
+              movilidad eléctrica, los vehículos conectados y los servicios digitales.
+            </p>
+              <a class="ext-link" href="https://www.kia.com/mx/" target="_blank" rel="noopener" data-alert="Vas a abrir el sitio oficial de Kia México en una pestaña nueva.">Sitio oficial de Kia México <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+            </div>
+            <img class="intro-img" src="img/kia.avif" width="560" height="340" alt="Ilustración de un auto conectado con señal inalámbrica">
+          </div>
+
+          <h4>Áreas de oportunidad en TI y software</h4>
+          <div class="filters" data-group="kia">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="desarrollo">Desarrollo</button>
+            <button class="filter" data-filter="datos">Datos</button>
+            <button class="filter" data-filter="infra">Infraestructura y seguridad</button>
+          </div>
+
+          <div class="cards">
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Software para vehículos conectados</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Plataformas y aplicaciones móviles que conectan el auto con el usuario (control remoto, localización, diagnóstico), además de sistemas de infoentretenimiento.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Aplicaciones internas y automatización</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Desarrollo web, integraciones y automatización de procesos para áreas como producción, logística, calidad y ventas.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Pruebas de software (QA)</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Validación de sistemas internos y aplicaciones, pruebas funcionales y automatizadas para asegurar calidad antes de liberar cambios.</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Análisis de datos y BI</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Tableros e indicadores sobre producción, calidad, ventas y cadena de suministro para apoyar la toma de decisiones.</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Industria 4.0 y sistemas de manufactura</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Sistemas que conectan máquinas, sensores y líneas de producción (MES, IoT, monitoreo) para una planta más eficiente.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Infraestructura, soporte y ERP</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Redes, servidores, soporte técnico y sistemas empresariales (como ERP) que mantienen operando a toda la organización.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Ciberseguridad</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Protección de la información, monitoreo de amenazas y seguridad de los sistemas de planta y de los vehículos conectados.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ZF -->
+        <article class="company" id="zf">
+          <div class="company-head">
+            <span class="badge">Autopartes y tecnología</span>
+            <h3>ZF</h3>
+          </div>
+          <div class="company-intro">
+            <div class="intro-text">
+            <p>
+              ZF Group es una empresa tecnológica alemana que desarrolla sistemas para automóviles,
+              camiones y maquinaria industrial. Es conocida por sus transmisiones, sistemas de
+              dirección y chasis, y por sus tecnologías de seguridad activa y pasiva (como sensores,
+              cámaras y asistentes a la conducción). Tiene presencia en México con plantas y centros
+              de trabajo, y apuesta fuerte por la electromovilidad y el vehículo definido por software.
+            </p>
+              <a class="ext-link" href="https://www.zf.com/" target="_blank" rel="noopener" data-alert="Vas a abrir el sitio oficial de ZF Group en una pestaña nueva.">Sitio oficial de ZF Group <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+            </div>
+            <img class="intro-img" src="img/zf.webp" width="560" height="340" alt="Ilustración de engranes y un chip electrónico">
+          </div>
+
+          <h4>Áreas de oportunidad en TI y software</h4>
+          <div class="filters" data-group="zf">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="desarrollo">Desarrollo</button>
+            <button class="filter" data-filter="datos">Datos</button>
+            <button class="filter" data-filter="infra">Infraestructura y seguridad</button>
+          </div>
+
+          <div class="cards">
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Software embebido y automotriz</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Programación del software que corre dentro de los sistemas del vehículo (control de transmisión, dirección, frenos), normalmente con C/C++ y estándares automotrices.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Asistencia a la conducción (ADAS)</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Software y validación de funciones como frenado de emergencia, mantenimiento de carril y sensores, con apoyo de visión por computadora.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Pruebas y validación (QA / HIL)</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Pruebas automatizadas y simulación de componentes para verificar que el software funcione de forma segura antes de llegar al vehículo.</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Datos y analítica industrial</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Análisis de datos de producción y calidad para detectar fallas, reducir desperdicio y mejorar procesos en planta.</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>IoT y Manufactura inteligente</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Conexión de máquinas y líneas de ensamble, monitoreo en tiempo real y sistemas de trazabilidad.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Sistemas empresariales y nube</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Apoyo en sistemas corporativos (ERP), servicios en la nube y soporte a usuarios en una empresa con operaciones globales.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Ciberseguridad</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Seguridad de la información y ciberseguridad automotriz, cada vez más importante con los vehículos conectados.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- BANORTE -->
+        <article class="company" id="banorte">
+          <div class="company-head">
+            <span class="badge">Sector financiero</span>
+            <h3>Banorte</h3>
+          </div>
+          <div class="company-intro">
+            <div class="intro-text">
+            <p>
+              Banorte es uno de los grupos financieros más grandes de México, con sede en Monterrey.
+              Ofrece servicios bancarios, créditos, tarjetas, inversiones, seguros y pensiones a
+              personas y empresas. Una parte muy importante de su operación hoy es digital: banca
+              móvil, banca en línea, pagos electrónicos y servicios que se apoyan en datos e
+              inteligencia artificial.
+            </p>
+              <a class="ext-link" href="https://www.banorte.com/" target="_blank" rel="noopener" data-alert="Vas a abrir el sitio oficial de Banorte en una pestaña nueva.">Sitio oficial de Banorte <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+            </div>
+            <img class="intro-img" src="img/banorte.png" width="560" height="340" alt="Ilustración de un edificio bancario y un teléfono con una gráfica de barras">
+          </div>
+
+          <h4>Áreas de oportunidad en TI y software</h4>
+          <div class="filters" data-group="banorte">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="desarrollo">Desarrollo</button>
+            <button class="filter" data-filter="datos">Datos</button>
+            <button class="filter" data-filter="infra">Infraestructura y seguridad</button>
+          </div>
+
+          <div class="cards">
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>Banca digital y apps móviles</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Desarrollo y mejora de la app y el portal web del banco: nuevas funciones, experiencia de usuario y rendimiento.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>APIs y sistemas backend</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Servicios y APIs que conectan los sistemas del banco con aplicaciones, comercios y otras entidades financieras.</p></div>
+            </div>
+            <div class="card" data-cat="desarrollo">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>QA y DevOps</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Pruebas automatizadas, integración y despliegue continuo para liberar software confiable y rápido.</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Ciencia de datos e IA</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Modelos para detectar fraude, evaluar riesgo, personalizar ofertas y mejorar la atención al cliente (por ejemplo con asistentes virtuales).</p></div>
+            </div>
+            <div class="card" data-cat="datos">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>Analítica y Business Intelligence</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Reportes y tableros para entender el comportamiento de clientes, productos y operaciones.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Ciberseguridad y prevención de fraude</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Monitoreo de amenazas, protección de datos de clientes y cumplimiento de normativas, un área crítica en cualquier banco.</p></div>
+            </div>
+            <div class="card" data-cat="infra">
+              <button class="card-toggle"><span class="ct"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg>Infraestructura y nube</span><span class="plus">+</span></button>
+              <div class="card-body"><p>Plataformas, servidores y servicios en la nube que mantienen disponibles los sistemas las 24 horas.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h5>Actividad fundamental 6</h5>
+        <p>Programación web</p>
+        <p>Hora: N5   Grupo 002</p>
+      </div>
+      <div class="student">
+        <p>Nombre: <span class="editable" contenteditable="true" data-key="nombre" data-placeholder="Lizzie Anette Mireles Tejada"></span></p>
+        <p>Matrícula: <span class="editable" contenteditable="true" data-key="matricula" data-placeholder="2144591"></span></p>
+        <p>Carrera: <span class="editable" contenteditable="true" data-key="carrera" data-placeholder="ITS"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Volver arriba"><svg class="ico" aria-hidden="true" focusable="false"><use href="#i-up"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
