@@ -66,18 +66,6 @@ document.getElementById('toTop').addEventListener('click', () =>
   window.scrollTo({ top: 0, behavior: 'smooth' })
 );
 
-// ---------- Datos ----------
-document.querySelectorAll('.editable').forEach(field => {
-  const key = 'alumno_' + field.dataset.key;
-  try {
-    const saved = localStorage.getItem(key);
-    if (saved) field.textContent = saved;
-  } catch (e) {}
-  field.addEventListener('input', () => {
-    try { localStorage.setItem(key, field.textContent.trim()); } catch (e) {}
-  });
-});
-
 // ---------- Alerta al abrir un sitio externo ----------
 document.querySelectorAll('a[data-alert]').forEach(link => {
   link.addEventListener('click', () => alert(link.dataset.alert));
